@@ -32,7 +32,7 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 20px;
     background-color: lightgray;
     border-radius: 10px;
