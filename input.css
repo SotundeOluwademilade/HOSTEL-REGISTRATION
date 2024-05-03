@@ -2,9 +2,14 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(./images\ \(7\).jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    /* width: 100vw; */
 }
 .image-container{
     /* border: 1px solid #000; */
@@ -20,11 +25,14 @@ body{
 }
 input{
     margin: 15px;
-    height: 5vh;
+    height: 3vh;
     width: auto;
     padding: 5px;
     border-radius: 5px;
     border: none;
+}
+#hostel{
+    width: 10vw;
 }
 label{
     color: #fff;
@@ -37,4 +45,35 @@ form{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
     /* text-transform: capitalize; */
     text-decoration: none;
+}
+@media screen and (max-width:700px){
+    body{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-image: url(./images\ \(7\).jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .image-container{
+        height: fit-content;
+        width: fit-content;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    .form{
+        /* border: 1px solid black;  */
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 150px;
+        height: 2.5vh;
+    }
 }

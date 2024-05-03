@@ -11,6 +11,12 @@ body{
     background-image: url(./images\ \(7\).jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: ;
+}
+h2{
+    font-size: 35px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: white
 }
 .mainheader{
     display: flex;
@@ -18,14 +24,20 @@ body{
     align-items: center;
     flex-direction: column;
 }
-input{
-    width: 30vw;
-    height: 5vh;
+input{  
+    width: 20vw;
+    height: 3.5vh;
     margin: 10px;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 2px 2px 2px 2px greenyellow;
+    /* box-shadow: 2px 2px 2px 2px greenyellow; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 800;
 }
 .form{
     display: flex;
@@ -34,6 +46,60 @@ input{
     flex-direction: column;
     /* border: 1px solid black; */
     padding: 20px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     border-radius: 10px;
+
+}
+label{
+    color: #fff;
+    
+}
+marquee{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./images\ \(7\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    }
+    h2{
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        /* border: 1px solid black; */
+    }
+    input{
+        width: 40vw;
+        border-radius: 10px;
+    }
+    label{
+        font-size: 25px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bolder;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 }
